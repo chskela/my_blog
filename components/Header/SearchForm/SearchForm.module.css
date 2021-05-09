@@ -1,0 +1,32 @@
+.form {
+  margin-right: var(--size-2);
+  position: relative;
+  min-width: 360px;
+}
+
+.form__input {
+  min-width: 360px;
+  font-size: var(--size-5);
+  color: var(--color-black);
+  border: 2px solid var(--color-secondary);
+  box-sizing: border-box;
+  border-radius: 10px;
+  line-height: 25px;
+  font-family: "Libre Baskerville", serif;
+  padding: var(--size-3) var(--size-8);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.form::after {
+  position: absolute;
+  right: var(--size-3);
+  top: var(--size-3);
+  width: 100%;
+  height: 30px;
+  width: 30px;
+  /* content: url(/assets/images/icons/loupe.svg); */
+  content: "";
+  background: url(/assets/images/icons/loupe.svg) no-repeat;
+  display: block;
+}

@@ -1,5 +1,8 @@
-.header__left {
+.header__right {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: nowrap;
+  flex-grow: 1;
 }

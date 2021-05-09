@@ -27,8 +27,9 @@ body {
   --color-grey-900: hsl(280, 5%, 13%); */
 
   --color-primary: #ffffff;
-  /* --color-primary-100: #a07aaa;
-  --color-primary-200: #884c97;
+  --color-secondary: #1c1c1c;
+  --color-black: #000000;
+  /*--color-primary-200: #884c97;
   --color-primary-300: #843897;
   --color-primary-400: #732392;
   --color-primary-500: #5a097a;
@@ -54,7 +55,7 @@ body {
 
   margin: 0;
   background-color: var(--color-primary);
-  color: #252525;
+  color: var(--color-black);
   font-family: "Open Sans", sans-serif;
 }
 
@@ -66,6 +67,7 @@ h3 {
 
 a {
   text-decoration: none;
+  color: var(--color-black);
 }
 
 button {
