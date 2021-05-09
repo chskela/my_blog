@@ -1,0 +1,17 @@
+.nav_list__item {
+  margin: 0 var(--size-4);
+}
+
+.nav_list__item a {
+  color: var(--color-grey-100);
+  font-size: var(--size-5);
+}
+
+.nav_list__item a:active,
+.nav_list__item a:hover {
+  opacity: 0.6;
+}
+
+.nav_list__item_active {
+  font-weight: 700;
+}
