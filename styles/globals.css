@@ -28,6 +28,7 @@ body {
 
   --color-primary: #ffffff;
   --color-secondary: #1c1c1c;
+  --color-secondary-500: hsla(0, 0%, 11%, 0.5);
   --color-black: #000000;
   /*--color-primary-200: #884c97;
   --color-primary-300: #843897;
@@ -49,6 +50,8 @@ body {
   --size-5: 1.25rem;
   --size-6: 1.5rem;
   --size-8: 2rem;
+  --size-10: 2.5rem;
+  --size-12: 3rem;
   --size-16: 4rem;
   --size-20: 5rem;
   --size-40: 10rem;
@@ -68,6 +71,10 @@ h3 {
 a {
   text-decoration: none;
   color: var(--color-black);
+}
+
+p {
+  margin: 0;
 }
 
 button {
