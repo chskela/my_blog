@@ -1,0 +1,14 @@
+.article {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.article div {
+  margin-right: var(--size-14);
+}
+
+.img {
+  width: 370px;
+  height: 300px;
+}
