@@ -1,28 +1,37 @@
+import PropTypes from "prop-types";
+import Image from "next/image";
+
 import ArticleDescription from "../ArticleDescription/ArticleDescription";
 
 import classes from "./ArticlePreview.module.css";
 
 export default function ArticlePreview({ article }) {
+  const { category, title, autor, date, excerpt, url } = article;
   return (
     <article className={classes.article}>
-      <div>
-        <img
-          className={classes.img}
-          src="/assets/images/hero.jpeg"
-          alt="World’s Most Dangerous Technology Ever Made."
+      <div className={classes.image}>
+        <Image src={url} alt={title} width={370} height={300} />
+      </div>
+      <div className={classes.description}>
+        <ArticleDescription
+          category={category}
+          title={title}
+          autor={autor}
+          date={date}
+          excerpt={excerpt}
         />
       </div>
-      <ArticleDescription
-        category="ИЗБРАННАЯ СТАТЬЯ"
-        title="World’s Most Dangerous Technology Ever Made."
-        autor="Ralph Hawkins"
-        date="May 7, 2019 (10 mins read)"
-        excerpt=" Proident aliquip velit qui commodo officia qui consectetur dolor
-            ullamco aliquip elit incididunt. Ea minim ex consectetur excepteur.
-            Ex laborum nostrud mollit sint consectetur Lorem amet aliqua do
-            enim. Commodo duis dolor anim excepteur. In aliquip mollit nulla
-            consequat velit magna."
-      />
     </article>
   );
 }
+
+ArticlePreview.propTypes = {
+  article: PropTypes.shape({
+    category: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    autor: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    excerpt: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+  }),
+};

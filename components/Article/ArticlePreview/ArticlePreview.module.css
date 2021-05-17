@@ -3,12 +3,18 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-}
-.article div {
-  margin-right: var(--size-14);
+  margin-bottom: var(--size-14);
 }
 
-.img {
-  width: 370px;
-  height: 300px;
+.image {
+  margin-right: var(--size-12);
+  flex: 110%;
+}
+
+.image img {
+  object-fit: contain;
+}
+
+.description {
+  flex: 130%;
 }
