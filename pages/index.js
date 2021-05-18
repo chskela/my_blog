@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Fragment } from "react";
 import EditorPick from "../components/EditorPick/EditorPick";
 import Hero from "../components/Hero/Hero";
+import FeaturedArticle from "../components/FeaturedArticle/FeaturedArticle";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Hero />
       <EditorPick />
+      <FeaturedArticle />
     </Fragment>
   );
 }
