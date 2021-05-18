@@ -4,17 +4,18 @@
   flex-direction: row;
   align-items: center;
   margin-bottom: var(--size-14);
+  max-height: 311px;
 }
 
 .image {
-  margin-right: var(--size-12);
-  flex: 110%;
+  margin-right: var(--size-14);
+  flex: 46;
 }
 
 .image img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .description {
-  flex: 130%;
+  flex: 54;
 }

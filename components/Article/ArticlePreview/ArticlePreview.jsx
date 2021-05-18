@@ -10,7 +10,13 @@ export default function ArticlePreview({ article }) {
   return (
     <article className={classes.article}>
       <div className={classes.image}>
-        <Image src={url} alt={title} width={370} height={300} />
+        <Image
+          src={url}
+          alt={title}
+          width={370}
+          height={300}
+          layout="responsive"
+        />
       </div>
       <div className={classes.description}>
         <ArticleDescription
