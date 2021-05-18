@@ -8,7 +8,7 @@
 
 .image {
   margin-right: var(--size-14);
-  flex: 46;
+  flex: 31;
 }
 
 .image img {
@@ -16,5 +16,5 @@
 }
 
 .description {
-  flex: 54;
+  flex: 69;
 }
