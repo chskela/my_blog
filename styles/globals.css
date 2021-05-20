@@ -30,6 +30,7 @@ body {
   --color-secondary: #1c1c1c;
   --color-secondary-500: hsla(0, 0%, 11%, 0.5);
   --color-black: #000000;
+  --color-gray: #f8f8f8;
   /*--color-primary-200: #884c97;
   --color-primary-300: #843897;
   --color-primary-400: #732392;
