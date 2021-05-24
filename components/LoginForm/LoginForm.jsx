@@ -2,10 +2,15 @@ import React from "react";
 import Link from "next/link";
 
 import classes from "./LoginForm.module.css";
+import useInput from "../../hooks/useInput";
 
 export default function LoginForm() {
+  const email = useInput("");
+  const password = useInput("");
+
   function handlerSubmite(e) {
     e.preventDefault();
+    console.log(email.value);
   }
 
   return (
@@ -20,14 +25,20 @@ export default function LoginForm() {
         <div>
           <input
             type="text"
-            name="username"
-            placeholder="Username"
+            name="emal"
+            placeholder="Email"
+            value={email.value}
+            onChange={email.onChange}
+            onBlur={email.onBlur}
             className={classes.form__control}
           />
           <input
             type="password"
             name="password"
             placeholder="Password"
+            value={password.value}
+            onChange={password.onChange}
+            onBlur={password.onBlur}
             className={classes.form__control}
           />
           <div className={classes.form__check}>
