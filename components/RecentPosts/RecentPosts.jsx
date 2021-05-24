@@ -1,4 +1,4 @@
-import ArticlePreviewMini from "../Article/ArticlePreviewMini/ArticlePreviewMini";
+import ArticlePreview from "../Article/ArticlePreview/ArticlePreview";
 
 import classes from "./RecentPosts.module.css";
 import TagsList from "./TagsList/TagsList";
@@ -17,11 +17,11 @@ export default function RecentPosts() {
   return (
     <section className={classes.section}>
       <div className={classes.articles}>
-        <ArticlePreviewMini article={article} />
-        <ArticlePreviewMini article={article} />
-        <ArticlePreviewMini article={article} />
-        <ArticlePreviewMini article={article} />
-        <ArticlePreviewMini article={article} />
+        <ArticlePreview article={article} mini />
+        <ArticlePreview article={article} mini />
+        <ArticlePreview article={article} mini />
+        <ArticlePreview article={article} mini />
+        <ArticlePreview article={article} mini />
       </div>
       <div className={classes.tags}>
         <div>

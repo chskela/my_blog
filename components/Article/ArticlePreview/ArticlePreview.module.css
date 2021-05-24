@@ -11,10 +11,17 @@
   flex: 46;
 }
 
+.image_mini {
+  flex: 31;
+}
+
 .image img {
   object-fit: cover;
 }
 
 .description {
   flex: 54;
+}
+.description_mini {
+  flex: 69;
 }

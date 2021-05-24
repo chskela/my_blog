@@ -1,15 +1,21 @@
 import PropTypes from "prop-types";
 import Image from "next/image";
 
+import cn from "classnames";
+
 import ArticleDescription from "../ArticleDescription/ArticleDescription";
 
 import classes from "./ArticlePreview.module.css";
 
-export default function ArticlePreview({ article }) {
+export default function ArticlePreview({ article, mini = false }) {
   const { category, title, autor, date, excerpt, url } = article;
+  const imageClass = cn(classes.image, { [classes.image_mini]: mini });
+  const descriptionClass = cn(classes.description, {
+    [classes.description_mini]: mini,
+  });
   return (
     <article className={classes.article}>
-      <div className={classes.image}>
+      <div className={imageClass}>
         <Image
           src={url}
           alt={title}
