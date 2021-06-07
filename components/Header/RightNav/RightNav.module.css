@@ -6,3 +6,8 @@
   flex-wrap: nowrap;
   flex-grow: 1;
 }
+
+.header__search {
+  min-width: 360px;
+  margin-right: var(--size-2);
+}

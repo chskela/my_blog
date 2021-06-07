@@ -6,7 +6,7 @@ import useInput from "../../hooks/useInput";
 import MuiButton from "../MuiButton/MuiButton";
 
 import classes from "./LoginForm.module.css";
-
+import MuiTextField from "../MuiTextField/MuiTextField";
 
 export default function LoginForm() {
   const email = useInput("");
@@ -27,7 +27,7 @@ export default function LoginForm() {
           </p>
         </div>
         <div>
-          <input
+          <MuiTextField
             type="text"
             name="emal"
             placeholder="Email"
@@ -36,7 +36,7 @@ export default function LoginForm() {
             onBlur={email.onBlur}
             className={classes.form__control}
           />
-          <input
+          <MuiTextField
             type="password"
             name="password"
             placeholder="Password"
@@ -45,6 +45,7 @@ export default function LoginForm() {
             onBlur={password.onBlur}
             className={classes.form__control}
           />
+
           <div className={classes.form__check}>
             <label>
               <input type="checkbox" />
