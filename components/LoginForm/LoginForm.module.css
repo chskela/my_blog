@@ -54,10 +54,5 @@
 
 .form__btn {
   width: 100%;
-  border: 2px solid var(--color-secondary);
-  border-radius: 10px;
-  background-color: var(--color-primary);
-  font-size: var(--size-5);
-  line-height: var(--size-6);
   padding: var(--size-4);
 }

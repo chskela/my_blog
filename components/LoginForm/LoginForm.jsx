@@ -1,8 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
-import classes from "./LoginForm.module.css";
 import useInput from "../../hooks/useInput";
+
+import MuiButton from "../MuiButton/MuiButton";
+
+import classes from "./LoginForm.module.css";
+
 
 export default function LoginForm() {
   const email = useInput("");
@@ -49,9 +53,7 @@ export default function LoginForm() {
             <Link href="/">Forgot Password?</Link>
           </div>
         </div>
-        <button type="submit" className={classes.form__btn}>
-          Login
-        </button>
+        <MuiButton label="Login" className={classes.form__btn} />
       </form>
     </div>
   );

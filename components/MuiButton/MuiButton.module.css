@@ -1,0 +1,12 @@
+.button {
+  font-weight: 400;
+  line-height: var(--size-6);
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: var(--size-5);
+  color: var(--color-secondary);
+  padding: var(--size-3) var(--size-8);
+  background-color: var(--color-primary);
+  font-family: "Libre Baskerville", serif;
+  border: 2px solid var(--color-secondary);
+}
