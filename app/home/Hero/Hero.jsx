@@ -1,12 +1,12 @@
-import ArticleDescription from "../Article/ArticleDescription/ArticleDescription";
+import MuiCardDescription from "../../../components/MuiCardDescription/MuiCardDescription";
 
-import classes from "./FeaturedArticle.module.css";
+import classes from "./Hero.module.css";
 
-export default function FeaturedArticle() {
+export default function Hero() {
   return (
     <section className={classes.hero}>
       <div className={classes.content}>
-        <ArticleDescription
+        <MuiCardDescription
           category="ИЗБРАННАЯ СТАТЬЯ"
           title="World’s Most Dangerous Technology Ever Made."
           autor="Ralph Hawkins"

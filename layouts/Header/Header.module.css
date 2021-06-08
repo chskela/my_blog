@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  height: var(--size-16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--size-12);
+}
+
+.header__left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+
+.header__search {
+  min-width: 360px;
+  margin-right: var(--size-2);
+}

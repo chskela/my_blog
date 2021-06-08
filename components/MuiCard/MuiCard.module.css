@@ -1,0 +1,17 @@
+.article {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: var(--size-14);
+  justify-content: space-between;
+}
+
+.article > div[data-role="image"] {
+  flex: 46;
+}
+
+.article > div[data-role="description"] {
+  flex: 54;
+  margin-left: var(--size-14);
+}

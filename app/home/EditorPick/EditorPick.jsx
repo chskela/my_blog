@@ -1,4 +1,4 @@
-import ArticlePreview from "../Article/ArticlePreview/ArticlePreview";
+import MuiCard from "../../../components/MuiCard/MuiCard";
 
 import classes from "./EditorPick.module.css";
 
@@ -16,9 +16,9 @@ export default function EditorPick() {
     <section className={classes.editor}>
       <h2 className={classes.editor__title}>Editor’s Picks</h2>
       <div>
-        <ArticlePreview article={article} />
-        <ArticlePreview article={article} />
-        <ArticlePreview article={article} />
+        <MuiCard article={article} href="/" />
+        <MuiCard article={article} href="/" />
+        <MuiCard article={article} href="/" />
       </div>
     </section>
   );

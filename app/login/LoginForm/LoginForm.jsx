@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
-import useInput from "../../hooks/useInput";
+import useInput from "../../../hooks/useInput";
 
-import MuiButton from "../MuiButton/MuiButton";
+import MuiButton from "../../../components/MuiButton/MuiButton";
 
 import classes from "./LoginForm.module.css";
-import MuiTextField from "../MuiTextField/MuiTextField";
+import MuiTextField from "../../../components/MuiTextField/MuiTextField";
 
 export default function LoginForm() {
   const email = useInput("");

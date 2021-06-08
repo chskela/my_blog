@@ -1,4 +1,4 @@
-import ArticlePreview from "../Article/ArticlePreview/ArticlePreview";
+import MuiCard from "../../../components/MuiCard/MuiCard";
 
 import classes from "./RecentPosts.module.css";
 import TagsList from "./TagsList/TagsList";
@@ -17,11 +17,11 @@ export default function RecentPosts() {
   return (
     <section className={classes.section}>
       <div className={classes.articles}>
-        <ArticlePreview article={article} mini />
-        <ArticlePreview article={article} mini />
-        <ArticlePreview article={article} mini />
-        <ArticlePreview article={article} mini />
-        <ArticlePreview article={article} mini />
+        <MuiCard article={article} href="/" className={classes.small} />
+        <MuiCard article={article} href="/" className={classes.small} />
+        <MuiCard article={article} href="/" className={classes.small} />
+        <MuiCard article={article} href="/" className={classes.small} />
+        <MuiCard article={article} href="/" className={classes.small} />
       </div>
       <div className={classes.tags}>
         <div>

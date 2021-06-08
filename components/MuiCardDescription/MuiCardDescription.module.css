@@ -1,18 +1,23 @@
-.content__category {
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content > p[data-role="content-category"] {
   font-size: var(--size-5);
   color: var(--color-secondary-500);
   text-transform: uppercase;
   line-height: var(--size-7);
 }
 
-.content__title {
+.content > h1[data-role="content-title"] {
   font-size: var(--size-8);
   margin: 0;
   margin-bottom: var(--size-3);
   line-height: var(--size-10);
 }
 
-.content__avatar {
+.content > div[data-role="content-avatar"] {
   color: var(--color-secondary-500);
   display: flex;
   flex-direction: row;
@@ -21,10 +26,11 @@
   margin-bottom: var(--size-3);
 }
 
-.content__autor {
+.content > div[data-role="content-avatar"] > p {
   margin-right: var(--size-6);
 }
 
-.content__excerpt {
+.content > p[data-role="content-excerpt"] {
+  overflow: hidden;
   line-height: 24px;
 }
