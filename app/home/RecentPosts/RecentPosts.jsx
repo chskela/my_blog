@@ -1,7 +1,8 @@
 import MuiCard from "@components/MuiCard/MuiCard";
 
-import classes from "./RecentPosts.module.css";
 import TagsList from "./TagsList/TagsList";
+
+import classes from "./RecentPosts.module.css";
 
 const article = {
   category: "ИЗБРАННАЯ СТАТЬЯ",
