@@ -1,12 +1,12 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 import cn from "classnames";
 import PropTypes from "prop-types";
 
 import MuiCardDescription from "../MuiCardDescription/MuiCardDescription";
 
-import classes from "./MuiCard.module.css";
+import classes from "./class.module.css";
 
 export default function MuiCard({ article, href, className }) {
   const { category, title, autor, date, excerpt, url } = article;

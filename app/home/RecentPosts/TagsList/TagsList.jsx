@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import classes from "./TagsList.module.css";
+import classes from "./class.module.css";
 
 export default function TagsList() {
   return (

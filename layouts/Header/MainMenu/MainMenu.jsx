@@ -1,7 +1,6 @@
-import React from "react";
 import MenuItem from "../MenuItem/MenuItem";
 
-import classes from "./MainMenu.module.css";
+import classes from "./class.module.css";
 
 export default function MainMenu({ list }) {
   return (

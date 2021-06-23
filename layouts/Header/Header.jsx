@@ -1,12 +1,12 @@
 import Logo from "./Logo/Logo";
 import menuList from "./menuList";
-import { MuiSearch } from "../../components/icons";
-
 import MainMenu from "./MainMenu/MainMenu";
-import MuiButton from "../../components/MuiButton/MuiButton";
-import MuiTextField from "../../components/MuiTextField/MuiTextField";
 
-import classes from "./Header.module.css";
+import { MuiSearch } from "@components/icons";
+import MuiButton from "@components/MuiButton/MuiButton";
+import MuiTextField from "@components/MuiTextField/MuiTextField";
+
+import classes from "./class.module.css";
 
 export default function Header() {
   return (

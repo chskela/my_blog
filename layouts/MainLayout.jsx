@@ -1,8 +1,7 @@
-import React from "react";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 
-import classes from "./MainLayout.module.css";
+import classes from "./class.module.css";
 
 export default function MainLayout({ children }) {
   return (

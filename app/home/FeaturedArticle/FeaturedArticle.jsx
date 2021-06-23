@@ -2,7 +2,7 @@ import { formatDate } from "@lib/formatDate";
 
 import MuiCardDescription from "@components/MuiCardDescription/MuiCardDescription";
 
-import classes from "./FeaturedArticle.module.css";
+import classes from "./class.module.css";
 
 export default function FeaturedArticle({ featuredPost }) {
   const { title, author, date, excerpt } = featuredPost;

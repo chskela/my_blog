@@ -2,7 +2,7 @@ import { formatDate } from "@lib/formatDate";
 
 import MuiCardDescription from "@components/MuiCardDescription/MuiCardDescription";
 
-import classes from "./Hero.module.css";
+import classes from "./class.module.css";
 
 export default function Hero({ heroPost }) {
   const { title, author, date, excerpt } = heroPost;

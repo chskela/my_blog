@@ -1,6 +1,6 @@
 import MuiCard from "@components/MuiCard/MuiCard";
 
-import classes from "./EditorPick.module.css";
+import classes from "./class.module.css";
 
 export default function EditorPick() {
   const article = {

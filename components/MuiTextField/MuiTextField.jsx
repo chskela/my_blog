@@ -1,7 +1,7 @@
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-import classes from "./MuiTextField.module.css";
+import classes from "./class.module.css";
 
 export default function MuiTextField({
   type = "search",

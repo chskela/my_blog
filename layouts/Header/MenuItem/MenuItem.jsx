@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import cn from "classnames";
 
-import classes from "./MainItem.module.css";
+import classes from "./class.module.css";
 
 export default function MenuItem({ link, title }) {
   const router = useRouter();
