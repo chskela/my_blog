@@ -1,9 +1,0 @@
-.tags__list {
-  list-style: none;
-  padding: 0;
-}
-
-.tags__list li {
-  font-size: var(--size-4);
-  line-height: var(--size-12);
-}

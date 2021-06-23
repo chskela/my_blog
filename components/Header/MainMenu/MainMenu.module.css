@@ -1,8 +1,0 @@
-.nav_list {
-  list-style: none;
-  display: flex;
-  align-items: baseline;
-  margin: 0;
-  margin-left: var(--size-8);
-  padding: 0;
-}

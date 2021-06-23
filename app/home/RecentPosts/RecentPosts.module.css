@@ -1,0 +1,33 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: var(--size-14);
+  margin: auto var(--size-30);
+}
+
+.articles {
+  margin-right: var(--size-30);
+  flex: 81;
+}
+
+.tags {
+  flex: 19;
+}
+
+.tags__title {
+  color: var(--color-secondary);
+  font-size: var(--size-5);
+  line-height: var(--size-7);
+  margin: 0;
+}
+
+.small > div[data-role="image"] {
+  flex: 33;
+}
+
+.small > div[data-role="description"] {
+  flex: 67;
+  margin-left: var(--size-8);
+}
