@@ -1,34 +1,26 @@
-import MuiCard from "@components/MuiCard/MuiCard";
-
-import TagsList from "./TagsList/TagsList";
-
 import classes from "./class.module.css";
 
-const article = {
-  category: "ИЗБРАННАЯ СТАТЬЯ",
-  title: "World’s Most Dangerous Technology Ever Made.",
-  autor: "Ralph Hawkins",
-  date: "May 7, 2019 (10 mins read)",
-  excerpt:
-    "Proident aliquip velit qui commodo officia qui consectetur dolor ullamco aliquip elit incididunt. Ea minim ex consectetur excepteur. ",
-  url: "/assets/images/hero.jpeg",
-};
+import TagsList from "./TagsList/TagsList";
+import MuiCard from "@components/MuiCard/MuiCard";
 
-export default function RecentPosts() {
+export default function RecentPosts({ recentPosts, tags }) {
   return (
     <section className={classes.section}>
       <div className={classes.articles}>
-        <MuiCard article={article} href="/" className={classes.small} />
-        <MuiCard article={article} href="/" className={classes.small} />
-        <MuiCard article={article} href="/" className={classes.small} />
-        <MuiCard article={article} href="/" className={classes.small} />
-        <MuiCard article={article} href="/" className={classes.small} />
+        {recentPosts.map((post, index) => (
+          <MuiCard
+            article={post}
+            href="/"
+            className={classes.small}
+            key={index}
+          />
+        ))}
       </div>
       <div className={classes.tags}>
         <div>
           <h4 className={classes.tags__title}>tags.</h4>
         </div>
-        <TagsList />
+        <TagsList tags={tags} />
       </div>
     </section>
   );

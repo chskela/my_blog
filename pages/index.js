@@ -2,7 +2,13 @@ import Head from "next/head";
 import { Fragment } from "react";
 
 import Home from "../app/home/Home";
-import { getAllPosts, getFeaturedPost, getHerodPost } from "../lib/posts-util";
+import {
+  getAllPosts,
+  getEditorPick,
+  getFeaturedPost,
+  getHerodPost,
+  getAllTags,
+} from "../lib/posts-util";
 
 export default function MyHome(props) {
   return (
@@ -21,11 +27,17 @@ export const getStaticProps = async () => {
   const posts = getAllPosts();
   const heroPost = getHerodPost();
   const featuredPost = getFeaturedPost();
+  const editorPick = getEditorPick();
+  const recentPosts = posts.slice(0, 5);
+  const allTags = getAllTags();
 
   return {
     props: {
       heroPost,
       featuredPost,
+      recentPosts,
+      editorPick,
+      allTags,
     },
   };
 };

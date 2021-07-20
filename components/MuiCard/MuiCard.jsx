@@ -4,12 +4,12 @@ import Image from "next/image";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-import MuiCardDescription from "../MuiCardDescription/MuiCardDescription";
-
 import classes from "./class.module.css";
 
+import MuiCardDescription from "../MuiCardDescription/MuiCardDescription";
+
 export default function MuiCard({ article, href, className }) {
-  const { category, title, autor, date, excerpt, url } = article;
+  const { category, title, author, date, excerpt, url } = article;
 
   return (
     <Link href={href}>
@@ -27,7 +27,7 @@ export default function MuiCard({ article, href, className }) {
           <MuiCardDescription
             category={category}
             title={title}
-            autor={autor}
+            author={author}
             date={date}
             excerpt={excerpt}
           />
@@ -41,7 +41,10 @@ MuiCard.propTypes = {
   article: PropTypes.shape({
     category: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    autor: PropTypes.string.isRequired,
+    author: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      picture: PropTypes.string.isRequired,
+    }),
     date: PropTypes.string.isRequired,
     excerpt: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,

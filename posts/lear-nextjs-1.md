@@ -1,13 +1,13 @@
 ---
 title: "Изучаем Next.js - часть 1"
-excerpt: "Next.js дает вам лучший опыт разработчика со всеми функциями, необходимыми для производства: гибридный статический и серверный рендеринг, поддержка TypeScript, интеллектуальное связывание, предварительная выборка маршрута и многое другое. Конфигурация не требуется."
-coverImage: "/assets/blog/learn-nextjs/pexels-markus-spiske-965345.jpg"
+excerpt: "Next.js дает вам лучший экспирианс со всеми функциями, необходимыми для разработки: гибридный статический и серверный рендеринг, поддержка TypeScript, интеллектуальное связывание, предварительная выборка маршрута и многое другое."
+category: "The React Framework"
+tags: ["React Framework", "JavaScript Framework"]
 date: "2021-03-16"
+url: "/assets/learn-nextjs/pexels-markus-spiske-965345.jpg"
 author:
   name: Алексей Чистяков
   picture: "/assets/blog/authors/jj.jpeg"
-ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
 isFeatured: true
 isPicks: true
 ---

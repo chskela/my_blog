@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: var(--size-14);
+}
+
+.content {
+  margin-right: var(--size-20);
+}

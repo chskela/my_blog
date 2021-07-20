@@ -1,11 +1,11 @@
 import cn from "classnames";
 import PropTypes from "prop-types";
 
+import classes from "./class.module.css";
+
 import { formatDate } from "@lib/formatDate";
 
 import MuiCardDescription from "@components/MuiCardDescription/MuiCardDescription";
-
-import classes from "./class.module.css";
 
 export default function MuiArticle({
   post,
@@ -23,7 +23,7 @@ export default function MuiArticle({
         <MuiCardDescription
           category={category}
           title={title}
-          autor={author.name}
+          author={author}
           date={postDate}
           excerpt={excerpt}
         />
@@ -35,7 +35,10 @@ export default function MuiArticle({
 MuiArticle.propTypes = {
   post: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    autor: PropTypes.string.isRequired,
+    author: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      picture: PropTypes.string.isRequired,
+    }),
     date: PropTypes.string.isRequired,
     excerpt: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,

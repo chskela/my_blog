@@ -2,16 +2,15 @@ import Link from "next/link";
 
 import classes from "./class.module.css";
 
-export default function TagsList() {
+export default function TagsList({ tags }) {
   return (
     <div>
       <ul className={classes.tags__list}>
-        <li>
-          <Link href="/">Technology</Link>
-        </li>
-        <li>
-          <Link href="/">JavaScript</Link>
-        </li>
+        {tags.map((tag, index) => (
+          <li key={tag + index}>
+            <Link href="/">{tag}</Link>
+          </li>
+        ))}
       </ul>
     </div>
   );
