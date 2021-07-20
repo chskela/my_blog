@@ -7,7 +7,7 @@ export default function MainMenu({ list }) {
     <nav>
       <ul className={classes.nav_list}>
         {list.map((item, i) => (
-          <MenuItem {...item} key={i} />
+          <MenuItem {...item} key={item.title + i} />
         ))}
       </ul>
     </nav>
