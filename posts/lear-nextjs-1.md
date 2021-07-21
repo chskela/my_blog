@@ -4,7 +4,7 @@ excerpt: "Next.js дает вам лучший экспирианс со все�
 category: "The React Framework"
 tags: ["React Framework", "JavaScript Framework"]
 date: "2021-03-16"
-url: "/assets/learn-nextjs/pexels-markus-spiske-965345.jpg"
+url: "/assets/blog/learn-nextjs/pexels-markus-spiske-965345.jpg"
 author:
   name: Алексей Чистяков
   picture: "/assets/blog/authors/jj.jpeg"
@@ -61,7 +61,9 @@ Next.js используется на десятках тысяч рабочих
 
 Чтобы создать приложение Next.js, откройте свой терминал, перейдите в каталог, в котором вы хотите создать приложение, и выполните следующую команду:
 
-<pre><code>npx create-next-app nextjs-blog --use-npm --example "https://github.com/vercel/next-learn-starter/tree/master/learn-starter"</code></pre>
+```bash
+npx create-next-app nextjs-blog --use-npm --example "https://github.com/vercel/next-learn-starter/tree/master/learn-starter"
+```
 
 > Под капотом здесь используется инструмент [`create-next-app`](https://nextjs.org/docs/api-reference/create-next-app), который загружает приложение Next.js за вас. Он использует [этот шаблон](https://github.com/vercel/next-learn-starter/tree/master/learn-starter) с помощью флага `--example`.
 
@@ -69,11 +71,15 @@ Next.js используется на десятках тысяч рабочих
 
 Теперь у вас есть новый каталог с именем `nextjs-blog`. Давайте перейдем к нему:
 
-<pre><code>cd nextjs-blog</code></pre>
+```bash
+cd nextjs-blog
+```
 
 Затем выполните следующую команду:
 
-<pre><code>npm run dev</code></pre>
+```bash
+npm run dev
+```
 
 Это запустит "сервер разработки" вашего приложения Next.js на порту **3000**.
 

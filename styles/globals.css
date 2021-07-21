@@ -75,13 +75,19 @@ h3 {
 a {
   text-decoration: none;
   color: var(--color-black);
+  transition: color 0.2s ease;
 }
 
 p {
   margin: 0;
+  display: inline;
 }
 
 button {
   font: inherit;
   cursor: pointer;
+}
+
+blockquote {
+  margin: 0;
 }

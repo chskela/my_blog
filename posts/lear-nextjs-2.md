@@ -4,7 +4,7 @@ excerpt: "Next.js дает вам лучший экспирианс со все�
 category: "The React Framework"
 tags: ["React Framework", "JavaScript Framework"]
 date: "2021-03-17T05:35:07.322Z"
-url: "/assets/learn-nextjs/pexels-markus-spiske-965345.jpg"
+url: "/assets/blog/learn-nextjs/pexels-markus-spiske-965345.jpg"
 author:
   name: Алексей Чистяков
   picture: "/assets/blog/authors/jj.jpeg"
@@ -24,4 +24,4 @@ isPicks: false
 
 Страницы связаны с маршрутом на основе **имени файла**. Например, в разработке:
 
-- `'pages/index.js'` is associated with the `'/'` route.
+- \`'pages/index.js'\` is associated with the \`'/'\` route.

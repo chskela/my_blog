@@ -1,4 +1,5 @@
 import cn from "classnames";
+import Link from "next/link";
 import PropTypes from "prop-types";
 
 import classes from "./class.module.css";
@@ -14,21 +15,23 @@ export default function MuiArticle({
     content: null,
   },
 }) {
-  const { title, author, date, excerpt, category } = post;
+  const { title, author, date, excerpt, category, slug } = post;
   const postDate = formatDate(date);
 
   return (
-    <section className={cn(classes.wrapper, classNames.wrapper)}>
-      <div className={cn(classes.content, classNames.content)}>
-        <MuiCardDescription
-          category={category}
-          title={title}
-          author={author}
-          date={postDate}
-          excerpt={excerpt}
-        />
-      </div>
-    </section>
+    <Link href={`/posts/${slug}`}>
+      <section className={cn(classes.wrapper, classNames.wrapper)}>
+        <div className={cn(classes.content, classNames.content)}>
+          <MuiCardDescription
+            category={category}
+            title={title}
+            author={author}
+            date={postDate}
+            excerpt={excerpt}
+          />
+        </div>
+      </section>
+    </Link>
   );
 }
 

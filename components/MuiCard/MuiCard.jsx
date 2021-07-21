@@ -8,11 +8,11 @@ import classes from "./class.module.css";
 
 import MuiCardDescription from "../MuiCardDescription/MuiCardDescription";
 
-export default function MuiCard({ article, href, className }) {
-  const { category, title, author, date, excerpt, url } = article;
+export default function MuiCard({ article, className }) {
+  const { category, title, author, date, excerpt, url, slug } = article;
 
   return (
-    <Link href={href}>
+    <Link href={`/posts/${slug}`}>
       <article className={cn(classes.article, className)}>
         <div data-role="image">
           <Image
@@ -48,7 +48,7 @@ MuiCard.propTypes = {
     date: PropTypes.string.isRequired,
     excerpt: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
   }),
-  href: PropTypes.string.isRequired,
   className: PropTypes.string,
 };

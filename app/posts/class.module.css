@@ -1,0 +1,43 @@
+.content {
+  width: 95%;
+  max-width: 70rem;
+  margin: var(--size-8) auto;
+  font-size: var(--size-5);
+  line-height: var(--size-8);
+  background-color: var(--color-grey-100);
+  border-radius: 6px;
+  padding: var(--size-4);
+}
+
+/* .content p {
+  color: var(--color-grey-800);
+} */
+
+.content .image {
+  margin: var(--size-10) auto;
+  max-width: 90%;
+  box-shadow: rgb(0 0 0 / 12%) 0px 8px 30px;
+}
+
+.inline {
+  display: inline;
+  color: rgb(212, 0, 255);
+  white-space: pre-wrap;
+}
+.inline::before {
+  content: "\`";
+}
+.inline::after {
+  content: "\`";
+}
+
+.link {
+  color: #0074de;
+  transition: color 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding: var(--size-8);
+  }
+}
