@@ -79,8 +79,7 @@ a {
 }
 
 p {
-  margin: 0;
-  display: inline;
+  margin: var(--size-4) 0;
 }
 
 button {

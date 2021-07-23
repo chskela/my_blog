@@ -19,15 +19,15 @@
   box-shadow: rgb(0 0 0 / 12%) 0px 8px 30px;
 }
 
-.inline {
+.inline_code {
   display: inline;
   color: rgb(212, 0, 255);
   white-space: pre-wrap;
 }
-.inline::before {
+.inline_code::before {
   content: "\`";
 }
-.inline::after {
+.inline_code::after {
   content: "\`";
 }
 
