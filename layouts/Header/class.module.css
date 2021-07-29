@@ -1,25 +1,25 @@
 .header {
   width: 100%;
-  height: var(--size-16);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  height: var(--size-16);
+  justify-content: space-between;
   margin-bottom: var(--size-12);
 }
 
 .header__left {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .header__right {
+  flex-grow: 1;
   display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-grow: 1;
 }
 
 .header__search {

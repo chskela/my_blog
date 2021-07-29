@@ -1,0 +1,31 @@
+.content {
+  height: 100%;
+}
+
+.search {
+  width: 700px;
+  margin-bottom: var(--size-16);
+}
+
+.search > input {
+  line-height: 35px;
+  border-radius: var(--size-10);
+}
+
+.search > div[data-role="icon"] {
+  position: absolute;
+  right: var(--size-4);
+  top: var(--size-4);
+}
+
+.tags_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.tag {
+  margin-right: var(--size-4);
+  margin-bottom: var(--size-6);
+  border-radius: var(--size-10);
+}
