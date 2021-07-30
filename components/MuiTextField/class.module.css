@@ -3,22 +3,23 @@
 }
 
 .textField > input {
+  width: 100%;
+  outline: none;
+  display: block;
+  font-weight: 400;
+  line-height: 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
   font-size: var(--size-5);
   color: var(--color-black);
-  border: 2px solid var(--color-secondary);
-  box-sizing: border-box;
-  border-radius: 10px;
-  line-height: 25px;
-  font-family: "Libre Baskerville", serif;
   padding: var(--size-3) var(--size-8);
-  font-weight: 400;
-  text-decoration: none;
-  width: 100%;
-  display: block;
+  font-family: "Libre Baskerville", serif;
+  border: 2px solid var(--color-secondary);
 }
 
 .textField > div[data-role="icon"] {
+  top: var(--size-3);
   position: absolute;
   right: var(--size-3);
-  top: var(--size-3);
 }

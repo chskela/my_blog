@@ -1,5 +1,10 @@
 .content {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .search {
@@ -23,9 +28,25 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: var(--size-10);
 }
+
 .tag {
   margin-right: var(--size-4);
   margin-bottom: var(--size-6);
   border-radius: var(--size-10);
+}
+
+.articles {
+  margin: 0 var(--size-30);
+  flex: 81;
+}
+
+.small > div[data-role="image"] {
+  flex: 33;
+}
+
+.small > div[data-role="description"] {
+  flex: 67;
+  margin-left: var(--size-8);
 }
