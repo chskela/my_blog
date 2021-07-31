@@ -26,3 +26,17 @@
   min-width: 360px;
   margin-right: var(--size-2);
 }
+
+.header__search > input {
+  border: 2px solid var(--color-primary);
+}
+.border > input,
+.header__search > input:hover,
+.header__search > input:active {
+  border: 2px solid var(--color-secondary);
+  transition: border 0.3s ease-in-out;
+}
+
+.header__icon {
+  cursor: pointer;
+}

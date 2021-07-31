@@ -1,18 +1,18 @@
-import Link from "next/link";
-
+import React from "react";
 import cn from "classnames";
+import Link from "next/link";
 import PropTypes from "prop-types";
 
 import classes from "./class.module.css";
 
-export default function MuiButton({
-  label,
-  href = "",
-  type = "button",
-  className = "",
-  onClick = () => {},
-}) {
-  return (
+const MuiButton = React.memo(
+  ({
+    label,
+    href = "",
+    type = "button",
+    className = "",
+    onClick = () => {},
+  }) => (
     <Link href={href}>
       <button
         type={type}
@@ -22,8 +22,8 @@ export default function MuiButton({
         {label}
       </button>
     </Link>
-  );
-}
+  )
+);
 
 MuiButton.propTypes = {
   label: PropTypes.string.isRequired,
@@ -32,3 +32,5 @@ MuiButton.propTypes = {
   className: PropTypes.string,
   onClick: PropTypes.func,
 };
+
+export default MuiButton;

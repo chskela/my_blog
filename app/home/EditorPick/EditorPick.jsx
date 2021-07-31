@@ -1,6 +1,6 @@
-import classes from "./class.module.css";
+import { MuiCard } from "@components";
 
-import MuiCard from "@components/MuiCard/MuiCard";
+import classes from "./class.module.css";
 
 export default function EditorPick({ editorPick }) {
   return (

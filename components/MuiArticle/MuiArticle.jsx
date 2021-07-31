@@ -1,3 +1,4 @@
+import React from "react";
 import cn from "classnames";
 import Link from "next/link";
 import PropTypes from "prop-types";
@@ -5,35 +6,36 @@ import PropTypes from "prop-types";
 import classes from "./class.module.css";
 
 import { formatDate } from "@lib/formatDate";
-
 import MuiCardDescription from "@components/MuiCardDescription/MuiCardDescription";
 
-export default function MuiArticle({
-  post,
-  classNames = {
-    wrapper: null,
-    content: null,
-  },
-}) {
-  const { title, author, date, excerpt, category, slug } = post;
-  const postDate = formatDate(date);
+const MuiArticle = React.memo(
+  ({
+    post,
+    classNames = {
+      wrapper: null,
+      content: null,
+    },
+  }) => {
+    const { title, author, date, excerpt, category, slug } = post;
+    const postDate = formatDate(date);
 
-  return (
-    <Link href={`/posts/${slug}`}>
-      <section className={cn(classes.wrapper, classNames.wrapper)}>
-        <div className={cn(classes.content, classNames.content)}>
-          <MuiCardDescription
-            category={category}
-            title={title}
-            author={author}
-            date={postDate}
-            excerpt={excerpt}
-          />
-        </div>
-      </section>
-    </Link>
-  );
-}
+    return (
+      <Link href={`/posts/${slug}`}>
+        <section className={cn(classes.wrapper, classNames.wrapper)}>
+          <div className={cn(classes.content, classNames.content)}>
+            <MuiCardDescription
+              category={category}
+              title={title}
+              author={author}
+              date={postDate}
+              excerpt={excerpt}
+            />
+          </div>
+        </section>
+      </Link>
+    );
+  }
+);
 
 MuiArticle.propTypes = {
   post: PropTypes.shape({
@@ -51,3 +53,5 @@ MuiArticle.propTypes = {
     content: PropTypes.string,
   }),
 };
+
+export default MuiArticle;

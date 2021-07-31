@@ -1,8 +1,10 @@
-import MenuItem from "../MenuItem/MenuItem";
+import React from "react";
 
 import classes from "./class.module.css";
 
-export default function MainMenu({ list }) {
+import MenuItem from "../MenuItem/MenuItem";
+
+const MainMenu = ({ list }) => {
   return (
     <nav>
       <ul className={classes.nav_list}>
@@ -12,4 +14,6 @@ export default function MainMenu({ list }) {
       </ul>
     </nav>
   );
-}
+};
+
+export default React.memo(MainMenu);

@@ -1,15 +1,10 @@
+import React from "react";
 import PropTypes from "prop-types";
 
 import classes from "./class.module.css";
 
-export default function MuiCardDescription({
-  category,
-  title,
-  author,
-  date = "",
-  excerpt,
-}) {
-  return (
+const MuiCardDescription = React.memo(
+  ({ category, title, author, date = "", excerpt }) => (
     <div className={classes.content}>
       <p data-role="content-category">{category}</p>
       <h1 data-role="content-title">{title}</h1>
@@ -19,8 +14,8 @@ export default function MuiCardDescription({
       </div>
       <p data-role="content-excerpt">{excerpt}</p>
     </div>
-  );
-}
+  )
+);
 
 MuiCardDescription.propTypes = {
   category: PropTypes.string.isRequired,
@@ -32,3 +27,5 @@ MuiCardDescription.propTypes = {
   date: PropTypes.string,
   excerpt: PropTypes.string.isRequired,
 };
+
+export default MuiCardDescription;

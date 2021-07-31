@@ -1,7 +1,7 @@
 import classes from "./class.module.css";
 
+import { MuiCard } from "@components";
 import TagsList from "./TagsList/TagsList";
-import MuiCard from "@components/MuiCard/MuiCard";
 
 export default function RecentPosts({ recentPosts, tags }) {
   return (

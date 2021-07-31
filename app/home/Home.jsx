@@ -2,9 +2,9 @@ import { Fragment } from "react";
 
 import classes from "./class.module.css";
 
+import {MuiArticle} from "@components";
 import EditorPick from "./EditorPick/EditorPick";
 import RecentPosts from "./RecentPosts/RecentPosts";
-import MuiArticle from "../../components/MuiArticle/MuiArticle";
 
 export default function Home({
   heroPost,

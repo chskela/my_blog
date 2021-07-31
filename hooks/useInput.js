@@ -1,7 +1,8 @@
 import { useState } from "react";
+
 export default function useInput(initialValue) {
-  const [value, setValue] = useState(initialValue);
   const [isDirty, setIsDirty] = useState(false);
+  const [value, setValue] = useState(initialValue);
 
   function onChange(e) {
     setValue(e.target.value);
@@ -13,6 +14,7 @@ export default function useInput(initialValue) {
 
   return {
     value,
+    isDirty,
     onChange,
     onBlur,
   };

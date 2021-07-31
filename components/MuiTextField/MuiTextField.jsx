@@ -1,18 +1,19 @@
+import React from "react";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
 import classes from "./class.module.css";
 
-export default function MuiTextField({
-  type = "search",
-  value = "",
-  placeholder = "",
-  onChange = () => {},
-  onBlur = () => {},
-  icon = null,
-  className,
-}) {
-  return (
+const MuiTextField = React.memo(
+  ({
+    type = "search",
+    value = "",
+    placeholder = "",
+    onChange = () => {},
+    onBlur = () => {},
+    icon = null,
+    className,
+  }) => (
     <div className={cn(classes.textField, className)}>
       <input
         type={type}
@@ -23,8 +24,8 @@ export default function MuiTextField({
       />
       {icon && <div data-role={"icon"}>{icon}</div>}
     </div>
-  );
-}
+  )
+);
 
 MuiTextField.propTypes = {
   type: PropTypes.string,
@@ -35,3 +36,5 @@ MuiTextField.propTypes = {
   icon: PropTypes.node,
   className: PropTypes.string,
 };
+
+export default MuiTextField;

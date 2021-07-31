@@ -1,10 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
-import useInput from "../../../hooks/useInput";
-
-import MuiButton from "@components/MuiButton/MuiButton";
-import MuiTextField from "@components/MuiTextField/MuiTextField";
+import useInput from "@hooks/useInput";
+import { MuiButton, MuiTextField } from "@components";
 
 import classes from "./class.module.css";
 

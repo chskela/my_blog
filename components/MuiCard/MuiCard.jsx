@@ -1,14 +1,14 @@
+import React from "react";
+import cn from "classnames";
 import Link from "next/link";
 import Image from "next/image";
-
-import cn from "classnames";
 import PropTypes from "prop-types";
 
 import classes from "./class.module.css";
 
 import MuiCardDescription from "../MuiCardDescription/MuiCardDescription";
 
-export default function MuiCard({ article, className }) {
+const MuiCard = React.memo(({ article, className }) => {
   const { category, title, author, date, excerpt, url, slug } = article;
 
   return (
@@ -35,7 +35,7 @@ export default function MuiCard({ article, className }) {
       </article>
     </Link>
   );
-}
+});
 
 MuiCard.propTypes = {
   article: PropTypes.shape({
@@ -52,3 +52,5 @@ MuiCard.propTypes = {
   }),
   className: PropTypes.string,
 };
+
+export default MuiCard;

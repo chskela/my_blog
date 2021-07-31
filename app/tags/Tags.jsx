@@ -3,9 +3,7 @@ import classes from "./class.module.css";
 import { useState, useEffect } from "react";
 
 import { MuiSearch } from "@components/icons";
-import MuiCard from "@components/MuiCard/MuiCard";
-import MuiButton from "@components/MuiButton/MuiButton";
-import MuiTextField from "@components/MuiTextField/MuiTextField";
+import { MuiCard, MuiButton, MuiTextField } from "@components";
 
 export default function Tags({ tags, posts }) {
   const [searchValue, setSearchValue] = useState("");

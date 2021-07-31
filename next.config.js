@@ -11,6 +11,7 @@ module.exports = {
     config.resolve.alias["@components"] = path.join(__dirname, "components");
     config.resolve.alias["@lib"] = path.join(__dirname, "lib");
     config.resolve.alias["@app"] = path.join(__dirname, "app");
+    config.resolve.alias["@hooks"] = path.join(__dirname, "hooks");
     return config;
   },
 };
