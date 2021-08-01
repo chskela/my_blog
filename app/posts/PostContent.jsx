@@ -6,13 +6,15 @@ import js from "react-syntax-highlighter/dist/cjs/languages/prism/javascript";
 import materialOceanic from "react-syntax-highlighter/dist/cjs/styles/prism/material-oceanic";
 
 import classes from "./class.module.css";
+import PostHeader from "./PostHeader/PostHeader";
 
 SyntaxHighlighter.registerLanguage("js", js);
 SyntaxHighlighter.registerLanguage("bash", bash);
 
 export default function PostContent({ post }) {
-  const { content, slug } = post;
-
+  const { content, slug, url, title, author, date, tags } = post;
+  const src = `/assets/blog/${slug}/${url}`;
+  console.log(src);
   const customRenderers = {
     p: ({ node, ...props }) => {
       if (node.children[0].tagName === "img") {
@@ -59,8 +61,17 @@ export default function PostContent({ post }) {
   };
 
   return (
-    <article className={classes.content}>
-      <ReactMarkdown components={customRenderers}>{content}</ReactMarkdown>
+    <article>
+      <PostHeader
+        title={title}
+        image={src}
+        author={author}
+        date={date}
+        tags={tags}
+      />
+      <div className={classes.content}>
+        <ReactMarkdown components={customRenderers}>{content}</ReactMarkdown>
+      </div>
     </article>
   );
 }

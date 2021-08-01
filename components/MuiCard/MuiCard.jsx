@@ -10,13 +10,14 @@ import MuiCardDescription from "../MuiCardDescription/MuiCardDescription";
 
 const MuiCard = React.memo(({ article, className }) => {
   const { category, title, author, date, excerpt, url, slug } = article;
+  const src = `/assets/blog/${slug}/${url}`;
 
   return (
     <Link href={`/posts/${slug}`}>
       <article className={cn(classes.article, className)}>
         <div data-role="image">
           <Image
-            src={url}
+            src={src}
             alt={title}
             width={370}
             height={300}

@@ -4,7 +4,7 @@ excerpt: "Next.js дает вам лучший экспирианс со все�
 category: "The React Framework"
 tags: ["React", "JavaScript"]
 date: "2021-07-23"
-url: "/assets/blog/learn-nextjs-2/pexels-markus-spiske-965345.jpg"
+url: "pexels-markus-spiske-965345.jpg"
 author:
   name: Алексей Чистяков
   picture: "/assets/blog/authors/jj.jpeg"
