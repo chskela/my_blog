@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { Fragment } from "react";
 
+import React from "react";
+
 import Home from "../app/home/Home";
 import {
   getAllPosts,

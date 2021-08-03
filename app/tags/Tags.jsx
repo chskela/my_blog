@@ -1,6 +1,6 @@
 import classes from "./class.module.css";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import { MuiSearch } from "@components/icons";
 import { MuiCard, MuiButton, MuiTextField } from "@components";

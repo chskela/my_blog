@@ -1,10 +1,10 @@
 import Head from "next/head";
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 
 import Tags from "@app/tags/Tags";
 import { getAllTags, getAllPosts } from "@lib/posts-util";
 
-export default function MyHome(props) {
+export default function TagsPage(props) {
   return (
     <Fragment>
       <Head>

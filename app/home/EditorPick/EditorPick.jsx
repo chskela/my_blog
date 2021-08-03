@@ -1,3 +1,5 @@
+import React from "react";
+
 import { MuiCard } from "@components";
 
 import classes from "./class.module.css";

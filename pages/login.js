@@ -1,9 +1,9 @@
 import Head from "next/head";
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 
 import LoginForm from "../app/login/LoginForm/LoginForm";
 
-export default function Home() {
+export default function Login() {
   return (
     <Fragment>
       <Head>

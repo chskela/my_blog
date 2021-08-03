@@ -1,8 +1,8 @@
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 
 import classes from "./class.module.css";
 
-import {MuiArticle} from "@components";
+import { MuiArticle } from "@components";
 import EditorPick from "./EditorPick/EditorPick";
 import RecentPosts from "./RecentPosts/RecentPosts";
 

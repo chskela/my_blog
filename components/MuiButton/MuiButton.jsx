@@ -6,27 +6,18 @@ import PropTypes from "prop-types";
 import classes from "./class.module.css";
 
 const MuiButton = React.memo(
-  ({
-    label,
-    href = "",
-    type = "button",
-    className = "",
-    onClick = () => {},
-  }) => (
-    <Link href={href}>
-      <button
-        type={type}
-        onClick={(event) => onClick(event)}
-        className={cn(classes.button, className)}
-      >
-        {label}
-      </button>
-    </Link>
+  ({ label, type = "button", className = "", onClick = () => {} }) => (
+    <button
+      type={type}
+      onClick={(event) => onClick(event)}
+      className={cn(classes.button, className)}
+    >
+      {label}
+    </button>
   )
 );
 
 MuiButton.propTypes = {
-  label: PropTypes.string.isRequired,
   href: PropTypes.string,
   type: PropTypes.oneOf(["reset", "button", "submite"]),
   className: PropTypes.string,
