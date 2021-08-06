@@ -54,4 +54,8 @@ MuiCard.propTypes = {
   className: PropTypes.string,
 };
 
+MuiCard.defaultProps = {
+  className: "",
+};
+
 export default MuiCard;

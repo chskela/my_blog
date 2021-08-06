@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 
 import PostContent from "@app/posts/PostContent";
 import { getAllPostPaths, getPostData, fileNameToSlug } from "@lib/posts-util";

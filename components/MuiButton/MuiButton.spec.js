@@ -1,9 +1,21 @@
+import { shallow } from "enzyme";
 import React from "react";
-import renderer from "react-test-renderer";
 import MuiButton from "./MuiButton";
 
-test("MuiButton cteated", () => {
-  const component = renderer.create(<MuiButton label={"Home"} />);
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+describe("MuiButtom component", () => {
+  it("should render MuiButtom component default props", () => {
+    const component = shallow(<MuiButton label={"Test"} onClick={() => {}} />);
+    expect(component).toMatchSnapshot();
+  });
+  it("should render MuiButtom component whis props", () => {
+    const component = shallow(
+      <MuiButton
+        label={"Test"}
+        type={"submite"}
+        className={"test"}
+        onClick={() => {}}
+      />
+    );
+    expect(component).toMatchSnapshot();
+  });
 });

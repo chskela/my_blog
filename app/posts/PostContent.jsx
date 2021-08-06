@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -14,7 +15,7 @@ SyntaxHighlighter.registerLanguage("bash", bash);
 export default function PostContent({ post }) {
   const { content, slug, url, title, author, date, tags } = post;
   const src = `/assets/blog/${slug}/${url}`;
-  console.log(src);
+
   const customRenderers = {
     p: ({ node, ...props }) => {
       if (node.children[0].tagName === "img") {

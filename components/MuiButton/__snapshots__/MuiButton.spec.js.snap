@@ -1,11 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MuiButton cteated 1`] = `
+exports[`MuiButtom component should render MuiButtom component default props 1`] = `
 <button
   className="button"
   onClick={[Function]}
   type="button"
 >
-  Home
+  Test
+</button>
+`;
+
+exports[`MuiButtom component should render MuiButtom component whis props 1`] = `
+<button
+  className="button test"
+  onClick={[Function]}
+  type="submite"
+>
+  Test
 </button>
 `;

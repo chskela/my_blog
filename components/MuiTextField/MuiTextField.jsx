@@ -5,15 +5,7 @@ import PropTypes from "prop-types";
 import classes from "./class.module.css";
 
 const MuiTextField = React.memo(
-  ({
-    type = "search",
-    value = "",
-    placeholder = "",
-    onChange = () => {},
-    onBlur = () => {},
-    icon = null,
-    className,
-  }) => (
+  ({ type, value, placeholder, onChange, onBlur, icon, className }) => (
     <div className={cn(classes.textField, className)}>
       <input
         type={type}
@@ -31,10 +23,19 @@ MuiTextField.propTypes = {
   type: PropTypes.string,
   value: PropTypes.string,
   placeholder: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
   onBlur: PropTypes.func,
   icon: PropTypes.node,
   className: PropTypes.string,
+};
+
+MuiTextField.defaultProps = {
+  type: "search",
+  value: "",
+  placeholder: "Search",
+  onBlur: () => {},
+  icon: null,
+  className: "",
 };
 
 export default MuiTextField;
