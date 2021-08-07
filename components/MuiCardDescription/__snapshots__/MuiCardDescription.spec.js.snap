@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MuiCardDescription component should render MuiCardDescription component default props 1`] = `
+<div
+  className="content"
+>
+  <p
+    data-role="content-category"
+  >
+    tets
+  </p>
+  <h1
+    data-role="content-title"
+  >
+    test
+  </h1>
+  <div
+    data-role="content-avatar"
+  >
+    <p>
+      test
+    </p>
+    <time />
+  </div>
+  <p
+    data-role="content-excerpt"
+  >
+    test
+  </p>
+</div>
+`;
+
+exports[`MuiCardDescription component should render MuiCardDescription component whis props 1`] = `
+<div
+  className="content"
+>
+  <p
+    data-role="content-category"
+  >
+    tets
+  </p>
+  <h1
+    data-role="content-title"
+  >
+    test
+  </h1>
+  <div
+    data-role="content-avatar"
+  >
+    <p>
+      test
+    </p>
+    <time>
+      test
+    </time>
+  </div>
+  <p
+    data-role="content-excerpt"
+  >
+    test
+  </p>
+</div>
+`;

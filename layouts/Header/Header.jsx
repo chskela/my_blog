@@ -14,7 +14,7 @@ import classes from "./class.module.css";
 
 export default function Header() {
   const { value, onChange } = useInput("");
-  console.log(value);
+
   return (
     <header className={classes.header}>
       <div className={classes.header__left}>
@@ -24,9 +24,11 @@ export default function Header() {
 
       <div className={classes.header__right}>
         <MuiTextField
-          type="text"
+          type={"text"}
           value={value}
+          onBlur={() => {}}
           onChange={onChange}
+          placeholder={""}
           className={cn(classes.header__search, {
             [classes.border]: !!value,
           })}

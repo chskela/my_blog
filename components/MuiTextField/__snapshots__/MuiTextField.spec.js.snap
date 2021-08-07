@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MuiTextField component should render MuiTextField component default props 1`] = `
+<div
+  className="textField"
+>
+  <input
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="Search"
+    type="search"
+    value=""
+  />
+</div>
+`;
+
+exports[`MuiTextField component should render MuiTextField component whis props 1`] = `
+<div
+  className="textField test"
+>
+  <input
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="test"
+    type="text"
+    value="test"
+  />
+  <div
+    data-role="icon"
+  >
+    test
+  </div>
+</div>
+`;

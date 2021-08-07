@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 import classes from "./class.module.css";
 
-import MuiCardDescription from "../MuiCardDescription/MuiCardDescription";
+import MuiCardDescription from "@components/MuiCardDescription/MuiCardDescription";
 
 const MuiCard = React.memo(({ article, className }) => {
   const { category, title, author, date, excerpt, url, slug } = article;
@@ -26,11 +26,11 @@ const MuiCard = React.memo(({ article, className }) => {
         </div>
         <div data-role="description">
           <MuiCardDescription
-            category={category}
+            date={date}
             title={title}
             author={author}
-            date={date}
             excerpt={excerpt}
+            category={category}
           />
         </div>
       </article>

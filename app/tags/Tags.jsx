@@ -37,7 +37,8 @@ export default function Tags({ tags, posts }) {
   return (
     <div className={classes.content}>
       <MuiTextField
-        type="text"
+        type={"text"}
+        onBlur={() => {}}
         value={searchValue}
         onChange={searcHandler}
         className={classes.search}
@@ -49,9 +50,9 @@ export default function Tags({ tags, posts }) {
         {filteredTags.map((tag) => (
           <MuiButton
             key={tag}
+            label={`#${tag}`}
             onClick={clickHandler}
             className={classes.tag}
-            label={`#${tag}`}
           />
         ))}
       </div>
@@ -59,10 +60,10 @@ export default function Tags({ tags, posts }) {
       <div className={classes.articles}>
         {filteredPosts.map((post, index) => (
           <MuiCard
-            article={post}
             href="/"
-            className={classes.small}
             key={index}
+            article={post}
+            className={classes.small}
           />
         ))}
       </div>
