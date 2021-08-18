@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 import classes from "./class.module.css";
 
-import MuiCardDescription from "../MuiCardDescription/MuiCardDescription";
+import { MuiCardDescription } from "../index";
 
 const MuiCard = React.memo(({ article, className }) => {
   const { category, title, author, date, excerpt, url, slug } = article;

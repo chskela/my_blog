@@ -2,7 +2,7 @@ import Head from "next/head";
 import React, { Fragment } from "react";
 
 import Tags from "@app/tags/Tags";
-import { getAllTags, getAllPosts } from "@lib/posts-util";
+import { getAllTags, getAllPosts } from "@lib/postsUtil";
 
 export default function TagsPage(props) {
   return (

@@ -22,6 +22,7 @@ describe("MuiArticle component", () => {
     const component = setUp(props);
     expect(component).toMatchSnapshot();
   });
+
   it("should render MuiArticle component whis props", () => {
     const component = setUp({
       ...props,

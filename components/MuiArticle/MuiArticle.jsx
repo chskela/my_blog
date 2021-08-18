@@ -5,12 +5,10 @@ import PropTypes from "prop-types";
 
 import classes from "./class.module.css";
 
-import { formatDate } from "../../lib/formatDate";
-import MuiCardDescription from "../MuiCardDescription/MuiCardDescription";
+import { MuiCardDescription } from "../index";
 
 const MuiArticle = React.memo(({ post, classNames }) => {
   const { title, author, date, excerpt, category, slug } = post;
-  const postDate = formatDate(date);
 
   return (
     <Link href={`/posts/${slug}`}>
@@ -20,7 +18,7 @@ const MuiArticle = React.memo(({ post, classNames }) => {
             category={category}
             title={title}
             author={author}
-            date={postDate}
+            date={date}
             excerpt={excerpt}
           />
         </div>

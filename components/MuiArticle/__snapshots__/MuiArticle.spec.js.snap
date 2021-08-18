@@ -18,7 +18,7 @@ exports[`MuiArticle component should render MuiArticle component default props 1
           }
         }
         category="test_category"
-        date="Invalid date"
+        date="test_date"
         excerpt="test_excerpt"
         title="test_title"
       />
@@ -45,7 +45,7 @@ exports[`MuiArticle component should render MuiArticle component whis props 1`] 
           }
         }
         category="test_category"
-        date="Invalid date"
+        date="test_date"
         excerpt="test_excerpt"
         title="test_title"
       />

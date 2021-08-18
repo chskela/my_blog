@@ -3,7 +3,10 @@ import Image from "next/image";
 
 import classes from "./class.module.css";
 
+import { formatDate } from "@lib/formatDate";
+
 export default function PostHeader({ title, image, author, date, tags }) {
+  const postDate = formatDate(date);
   return (
     <header className={classes.header}>
       <div className={classes.header__image}>
@@ -14,7 +17,7 @@ export default function PostHeader({ title, image, author, date, tags }) {
       <div className={classes.content}>
         <div className={classes.avatar}>
           <p>{author.name}</p>
-          <time>{date}</time>
+          <time>{postDate}</time>
         </div>
         <div className={classes.tags}>
           {tags.map((tag) => (

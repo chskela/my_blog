@@ -1,7 +1,6 @@
+import React from "react";
 import Head from "next/head";
 import { Fragment } from "react";
-
-import React from "react";
 
 import Home from "../app/home/Home";
 import {
@@ -10,7 +9,7 @@ import {
   getFeaturedPost,
   getHerodPost,
   getAllTags,
-} from "../lib/posts-util";
+} from "../lib/postsUtil";
 
 export default function MyHome(props) {
   return (

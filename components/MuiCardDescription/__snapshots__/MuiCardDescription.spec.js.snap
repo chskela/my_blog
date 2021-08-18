@@ -20,7 +20,9 @@ exports[`MuiCardDescription component should render MuiCardDescription component
     <p>
       test
     </p>
-    <time />
+    <time>
+      Invalid date
+    </time>
   </div>
   <p
     data-role="content-excerpt"
@@ -51,7 +53,7 @@ exports[`MuiCardDescription component should render MuiCardDescription component
       test
     </p>
     <time>
-      test
+      Invalid date
     </time>
   </div>
   <p

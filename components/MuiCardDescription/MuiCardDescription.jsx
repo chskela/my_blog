@@ -3,18 +3,23 @@ import PropTypes from "prop-types";
 
 import classes from "./class.module.css";
 
+import { formatDate } from "../../lib/formatDate";
+
 const MuiCardDescription = React.memo(
-  ({ category, title, author, date, excerpt }) => (
-    <div className={classes.content}>
-      <p data-role="content-category">{category}</p>
-      <h1 data-role="content-title">{title}</h1>
-      <div data-role="content-avatar">
-        <p>{author.name}</p>
-        <time>{date}</time>
+  ({ category, title, author, date, excerpt }) => {
+    const postDate = formatDate(date);
+    return (
+      <div className={classes.content}>
+        <p data-role="content-category">{category}</p>
+        <h1 data-role="content-title">{title}</h1>
+        <div data-role="content-avatar">
+          <p>{author.name}</p>
+          <time>{postDate}</time>
+        </div>
+        <p data-role="content-excerpt">{excerpt}</p>
       </div>
-      <p data-role="content-excerpt">{excerpt}</p>
-    </div>
-  )
+    );
+  }
 );
 
 MuiCardDescription.propTypes = {

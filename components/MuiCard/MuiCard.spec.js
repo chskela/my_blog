@@ -13,7 +13,7 @@ describe("MuiCard component", () => {
         name: "test_name",
         picture: "test_picture",
       },
-      date: "test_date",
+      date: "0",
       excerpt: "test_excerpt",
       url: "test_url",
       slug: "test_slug",
