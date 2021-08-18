@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 
 import classes from "./class.module.css";
 
-import { formatDate } from "@lib/formatDate";
-import MuiCardDescription from "@components/MuiCardDescription/MuiCardDescription";
+import { formatDate } from "../../lib/formatDate";
+import MuiCardDescription from "../MuiCardDescription/MuiCardDescription";
 
 const MuiArticle = React.memo(({ post, classNames }) => {
   const { title, author, date, excerpt, category, slug } = post;

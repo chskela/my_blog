@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MuiArticle component should render MuiArticle component default props 1`] = `
+<Link
+  href="/posts/undefined"
+>
+  <section
+    className="wrapper"
+  >
+    <div
+      className="content"
+    >
+      <Memo()
+        author={
+          Object {
+            "name": "test_name",
+            "picture": "test_picture",
+          }
+        }
+        category="test_category"
+        date="Invalid date"
+        excerpt="test_excerpt"
+        title="test_title"
+      />
+    </div>
+  </section>
+</Link>
+`;
+
+exports[`MuiArticle component should render MuiArticle component whis props 1`] = `
+<Link
+  href="/posts/undefined"
+>
+  <section
+    className="wrapper"
+  >
+    <div
+      className="content"
+    >
+      <Memo()
+        author={
+          Object {
+            "name": "test_name",
+            "picture": "test_picture",
+          }
+        }
+        category="test_category"
+        date="Invalid date"
+        excerpt="test_excerpt"
+        title="test_title"
+      />
+    </div>
+  </section>
+</Link>
+`;
