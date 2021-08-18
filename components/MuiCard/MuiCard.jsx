@@ -6,14 +6,14 @@ import PropTypes from "prop-types";
 
 import classes from "./class.module.css";
 
-import MuiCardDescription from "@components/MuiCardDescription/MuiCardDescription";
+import MuiCardDescription from "../MuiCardDescription/MuiCardDescription";
 
 const MuiCard = React.memo(({ article, className }) => {
   const { category, title, author, date, excerpt, url, slug } = article;
   const src = `/assets/blog/${slug}/${url}`;
 
   return (
-    <Link href={`/posts/${slug}`}>
+    <Link href={`/posts/${slug}`} passHref>
       <article className={cn(classes.article, className)}>
         <div data-role="image">
           <Image

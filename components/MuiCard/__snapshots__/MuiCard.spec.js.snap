@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MuiCard component should render MuiCard component default props 1`] = `
+<Link
+  href="/posts/test_slug"
+  passHref={true}
+>
+  <article
+    className="article"
+  >
+    <div
+      data-role="image"
+    >
+      <Image
+        alt="test_title"
+        height={300}
+        layout="responsive"
+        src="/assets/blog/test_slug/test_url"
+        width={370}
+      />
+    </div>
+    <div
+      data-role="description"
+    >
+      <Memo()
+        author={
+          Object {
+            "name": "test_name",
+            "picture": "test_picture",
+          }
+        }
+        category="test_category"
+        date="test_date"
+        excerpt="test_excerpt"
+        title="test_title"
+      />
+    </div>
+  </article>
+</Link>
+`;
+
+exports[`MuiCard component should render MuiCard component whis props 1`] = `
+<Link
+  href="/posts/test_slug"
+  passHref={true}
+>
+  <article
+    className="article test"
+  >
+    <div
+      data-role="image"
+    >
+      <Image
+        alt="test_title"
+        height={300}
+        layout="responsive"
+        src="/assets/blog/test_slug/test_url"
+        width={370}
+      />
+    </div>
+    <div
+      data-role="description"
+    >
+      <Memo()
+        author={
+          Object {
+            "name": "test_name",
+            "picture": "test_picture",
+          }
+        }
+        category="test_category"
+        date="test_date"
+        excerpt="test_excerpt"
+        title="test_title"
+      />
+    </div>
+  </article>
+</Link>
+`;

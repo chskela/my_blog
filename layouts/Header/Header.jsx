@@ -15,6 +15,10 @@ import classes from "./class.module.css";
 export default function Header() {
   const { value, onChange } = useInput("");
 
+  const Icon = React.forwardRef(() => (
+    <MuiSearch size={30} className={classes.header__icon} />
+  ));
+
   return (
     <header className={classes.header}>
       <div className={classes.header__left}>
@@ -34,7 +38,7 @@ export default function Header() {
           })}
           icon={
             <Link href="/tags">
-              <MuiSearch size={30} className={classes.header__icon} />
+              <Icon />
             </Link>
           }
         />
