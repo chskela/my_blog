@@ -3,13 +3,15 @@ import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import bash from "react-syntax-highlighter/dist/cjs/languages/prism/bash";
-import js from "react-syntax-highlighter/dist/cjs/languages/prism/javascript";
+import jsx from "react-syntax-highlighter/dist/cjs/languages/prism/jsx";
+import css from "react-syntax-highlighter/dist/cjs/languages/prism/css";
 import materialOceanic from "react-syntax-highlighter/dist/cjs/styles/prism/material-oceanic";
 
 import classes from "./class.module.css";
 import PostHeader from "./PostHeader/PostHeader";
 
-SyntaxHighlighter.registerLanguage("js", js);
+SyntaxHighlighter.registerLanguage("jsx", jsx);
+SyntaxHighlighter.registerLanguage("css", css);
 SyntaxHighlighter.registerLanguage("bash", bash);
 
 export default function PostContent({ post }) {
@@ -23,13 +25,12 @@ export default function PostContent({ post }) {
         const src = `/assets/blog/${slug}/${image.properties.src}`;
 
         return (
-          <div className={classes.image}>
+          <div className={classes.image_container}>
             <Image
               src={src}
               alt={image.properties.alt}
-              width={680}
-              layout="responsive"
-              height={440}
+              layout="fill"
+              className={classes.image}
             />
           </div>
         );
@@ -48,9 +49,23 @@ export default function PostContent({ post }) {
         );
       }
 
-      if (props?.className === "language-js") {
+      if (props?.className === "language-jsx") {
         return (
-          <SyntaxHighlighter {...props} language="js" style={materialOceanic} />
+          <SyntaxHighlighter
+            {...props}
+            language="jsx"
+            style={materialOceanic}
+          />
+        );
+      }
+
+      if (props?.className === "language-css") {
+        return (
+          <SyntaxHighlighter
+            {...props}
+            language="css"
+            style={materialOceanic}
+          />
         );
       }
 

@@ -2,7 +2,7 @@ import Head from "next/head";
 import React, { Fragment } from "react";
 
 import PostContent from "@app/posts/PostContent";
-import { getAllPostPaths, getPostData, fileNameToSlug } from "@lib/posts-util";
+import { getAllPostPaths, getPostData, fileNameToSlug } from "@lib/postsUtil";
 
 export default function PostDetailPage({ post }) {
   return (

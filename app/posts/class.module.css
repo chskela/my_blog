@@ -1,29 +1,41 @@
 .content {
   width: 95%;
   max-width: 70rem;
-  margin: var(--size-8) auto;
-  font-size: var(--size-5);
-  line-height: var(--size-8);
-  background-color: var(--color-grey-100);
   border-radius: 6px;
   padding: var(--size-4);
+  font-size: var(--size-5);
+  line-height: var(--size-8);
+  margin: var(--size-8) auto;
+  background-color: var(--color-grey-100);
 }
 
 /* .content p {
   color: var(--color-grey-800);
 } */
 
-.content .image {
-  margin: var(--size-10) auto;
+.image_container {
   max-width: 90%;
+  margin: var(--size-10) auto;
   box-shadow: rgb(0 0 0 / 12%) 0px 8px 30px;
+}
+
+.image_container > div {
+  position: unset !important;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  height: unset !important;
+  position: relative !important;
 }
 
 .inline_code {
   display: inline;
-  color: rgb(212, 0, 255);
   white-space: pre-wrap;
+  color: rgb(212, 0, 255);
 }
+
 .inline_code::before {
   content: "\`";
 }

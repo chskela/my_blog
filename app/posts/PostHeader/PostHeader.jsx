@@ -10,7 +10,7 @@ export default function PostHeader({ title, image, author, date, tags }) {
   return (
     <header className={classes.header}>
       <div className={classes.header__image}>
-        <Image src={image} alt={title} width={1316} height={592} />
+        <Image priority src={image} alt={title} width={1316} height={592} />
       </div>
 
       <h1 className={classes.header__title}>{title}</h1>

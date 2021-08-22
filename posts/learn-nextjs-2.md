@@ -35,7 +35,7 @@ isPicks: false
 
 Создайте файл с именем `first-post.js` внутри каталога `posts` со следующим содержимым:
 
-```js
+```jsx
 export default function FirstPost() {
   return <h1>First Post</h1>;
 }
@@ -63,13 +63,13 @@ export default function FirstPost() {
 
 Сначала откройте `pages/index.js` и импортируйте компонент `Link` из [`next/link`](https://nextjs.org/docs/api-reference/next/link), добавив эту строку вверху:
 
-```js
+```jsx
 import Link from "next/link";
 ```
 
 Затем найдите тег `h1`, который выглядит так:
 
-```js
+```jsx
 <h1 className="title">
   Learn <a href="https://nextjs.org">Next.js!</a>
 </h1>
@@ -77,7 +77,7 @@ import Link from "next/link";
 
 И измените его на:
 
-```js
+```jsx
 <h1 className="title">
   Read{" "}
   <Link href="/posts/first-post">
@@ -90,7 +90,7 @@ import Link from "next/link";
 
 Затем откройте `pages/posts/first-post.js` и замените его содержимое следующим:
 
-```js
+```jsx
 import Link from "next/link";
 
 export default function FirstPost() {
