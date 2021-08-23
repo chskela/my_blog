@@ -58,4 +58,6 @@ MuiCard.defaultProps = {
   className: "",
 };
 
+MuiCard.displayName = "MuiCard";
+
 export default MuiCard;

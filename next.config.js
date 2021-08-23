@@ -4,9 +4,6 @@ const path = require("path");
 
 module.exports = {
   reactStrictMode: true,
-  future: {
-    webpack5: true,
-  },
   webpack: (config) => {
     config.resolve.alias["@lib"] = path.join(__dirname, "lib");
     config.resolve.alias["@app"] = path.join(__dirname, "app");

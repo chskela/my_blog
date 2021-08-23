@@ -11,7 +11,7 @@ exports[`MuiCard component should render MuiCard component default props 1`] = `
     <div
       data-role="image"
     >
-      <Image
+      <Image1
         alt="test_title"
         height={300}
         layout="responsive"
@@ -22,7 +22,7 @@ exports[`MuiCard component should render MuiCard component default props 1`] = `
     <div
       data-role="description"
     >
-      <Memo()
+      <MuiCardDescription
         author={
           Object {
             "name": "test_name",
@@ -50,7 +50,7 @@ exports[`MuiCard component should render MuiCard component whis props 1`] = `
     <div
       data-role="image"
     >
-      <Image
+      <Image1
         alt="test_title"
         height={300}
         layout="responsive"
@@ -61,7 +61,7 @@ exports[`MuiCard component should render MuiCard component whis props 1`] = `
     <div
       data-role="description"
     >
-      <Memo()
+      <MuiCardDescription
         author={
           Object {
             "name": "test_name",

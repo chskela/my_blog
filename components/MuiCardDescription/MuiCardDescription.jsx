@@ -37,4 +37,6 @@ MuiCardDescription.defaultProps = {
   date: "",
 };
 
+MuiCardDescription.displayName = "MuiCardDescription";
+
 export default MuiCardDescription;

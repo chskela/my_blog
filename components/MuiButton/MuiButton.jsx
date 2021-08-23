@@ -27,4 +27,6 @@ MuiButton.defaultProps = {
   className: "",
 };
 
+MuiButton.displayName = "MuiButton";
+
 export default MuiButton;

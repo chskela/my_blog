@@ -11,7 +11,7 @@ const MuiArticle = React.memo(({ post, classNames }) => {
   const { title, author, date, excerpt, category, slug } = post;
 
   return (
-    <Link href={`/posts/${slug}`}>
+    <Link href={`/posts/${slug}`} passHref>
       <section className={cn(classes.wrapper, classNames?.wrapper)}>
         <div className={cn(classes.content, classNames?.content)}>
           <MuiCardDescription
@@ -50,5 +50,7 @@ MuiArticle.defaultProps = {
     content: "",
   },
 };
+
+MuiArticle.displayName = "MuiArticle";
 
 export default MuiArticle;

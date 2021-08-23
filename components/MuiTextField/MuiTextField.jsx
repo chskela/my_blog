@@ -37,4 +37,6 @@ MuiTextField.defaultProps = {
   placeholder: "Search",
 };
 
+MuiTextField.displayName = "MuiTextField";
+
 export default MuiTextField;
