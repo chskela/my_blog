@@ -1,0 +1,40 @@
+.wrapper {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 150px;
+  height: 150px;
+  stroke-width: 1px;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  font-size: var(--size-5);
+  padding: 0 var(--size-8);
+  line-height: var(--size-6);
+}
+
+.mirror {
+  transform: rotate(180deg);
+}
+
+.bold {
+  font-weight: 700;
+}

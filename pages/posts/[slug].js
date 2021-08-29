@@ -2,7 +2,12 @@ import Head from "next/head";
 import React, { Fragment } from "react";
 
 import PostContent from "@app/posts/PostContent";
-import { getAllPostPaths, getPostData, fileNameToSlug } from "@lib/postsUtil";
+import {
+  getAllPostPaths,
+  getPostData,
+  fileNameToSlug,
+  getAllPosts,
+} from "@lib/postsUtil";
 
 export default function PostDetailPage({ post }) {
   return (
@@ -19,10 +24,21 @@ export default function PostDetailPage({ post }) {
 export const getStaticProps = async (ctx) => {
   const { slug } = ctx.params;
   const post = getPostData(slug);
+  const allPosts = getAllPosts();
+  const currentIndex = allPosts
+    .map(({ title, slug }) => ({
+      title,
+      slug,
+    }))
+    .findIndex((i) => i.slug === slug);
 
   return {
     props: {
-      post,
+      post: {
+        ...post,
+        prev: allPosts[currentIndex + 1] ? allPosts[currentIndex + 1] : null,
+        next: allPosts[currentIndex - 1] ? allPosts[currentIndex - 1] : null,
+      },
     },
   };
 };

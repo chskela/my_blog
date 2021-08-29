@@ -1,13 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
-import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
-import bash from "react-syntax-highlighter/dist/cjs/languages/prism/bash";
 import jsx from "react-syntax-highlighter/dist/cjs/languages/prism/jsx";
 import css from "react-syntax-highlighter/dist/cjs/languages/prism/css";
+import bash from "react-syntax-highlighter/dist/cjs/languages/prism/bash";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import materialOceanic from "react-syntax-highlighter/dist/cjs/styles/prism/material-oceanic";
 
 import classes from "./class.module.css";
+
+import PostNav from "./PostNav/PostNav";
 import PostHeader from "./PostHeader/PostHeader";
 
 SyntaxHighlighter.registerLanguage("jsx", jsx);
@@ -15,7 +17,7 @@ SyntaxHighlighter.registerLanguage("css", css);
 SyntaxHighlighter.registerLanguage("bash", bash);
 
 export default function PostContent({ post }) {
-  const { content, slug, url, title, author, date, tags } = post;
+  const { content, slug, url, title, author, date, tags, prev, next } = post;
   const src = `/assets/blog/${slug}/${url}`;
 
   const customRenderers = {
@@ -88,6 +90,7 @@ export default function PostContent({ post }) {
       <div className={classes.content}>
         <ReactMarkdown components={customRenderers}>{content}</ReactMarkdown>
       </div>
+      <PostNav prev={prev} next={next} />
     </article>
   );
 }
