@@ -1,10 +1,11 @@
 .content {
   height: 100%;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  min-height: calc(100vh - 242px);
 }
 
 .search {
@@ -18,9 +19,9 @@
 }
 
 .search > div[data-role="icon"] {
+  top: var(--size-4);
   position: absolute;
   right: var(--size-4);
-  top: var(--size-4);
 }
 
 .tags_list {

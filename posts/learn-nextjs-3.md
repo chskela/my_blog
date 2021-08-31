@@ -2,7 +2,7 @@
 title: "Изучаем Next.js - часть 3"
 excerpt: "Next.js дает вам лучший экспирианс со всеми функциями, необходимыми для разработки: гибридный статический и серверный рендеринг, поддержка TypeScript, интеллектуальное связывание, предварительная выборка маршрута и многое другое."
 category: "The React Framework"
-tags: ["React", "JavaScript"]
+tags: ["React", "JavaScript", "Guides"]
 date: "2021-08-21"
 url: "pexels-markus-spiske-965345.jpg"
 author:

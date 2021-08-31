@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import jsx from "react-syntax-highlighter/dist/cjs/languages/prism/jsx";
 import css from "react-syntax-highlighter/dist/cjs/languages/prism/css";
 import bash from "react-syntax-highlighter/dist/cjs/languages/prism/bash";
+import html from "react-syntax-highlighter/dist/cjs/languages/hljs/htmlbars";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import materialOceanic from "react-syntax-highlighter/dist/cjs/styles/prism/material-oceanic";
 
@@ -66,6 +67,15 @@ export default function PostContent({ post }) {
           <SyntaxHighlighter
             {...props}
             language="css"
+            style={materialOceanic}
+          />
+        );
+      }
+      if (props?.className === "language-html") {
+        return (
+          <SyntaxHighlighter
+            {...props}
+            language="html"
             style={materialOceanic}
           />
         );

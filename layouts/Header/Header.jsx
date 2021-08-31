@@ -1,6 +1,7 @@
 import React from "react";
 import cn from "classnames";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import Logo from "./Logo/Logo";
 import menuList from "./menuList";
@@ -13,10 +14,19 @@ import { MuiButton, MuiTextField } from "@components";
 import classes from "./class.module.css";
 
 export default function Header() {
+  const router = useRouter();
   const { value, onChange } = useInput("");
 
+  const searcHandler = () => {
+    value && value.length > 2 && router.push(`/search?s=${value}`);
+  };
+
   const Icon = React.forwardRef(() => (
-    <MuiSearch size={30} className={classes.header__icon} />
+    <MuiSearch
+      size={30}
+      className={classes.header__icon}
+      onClick={searcHandler}
+    />
   ));
 
   return (
@@ -37,9 +47,14 @@ export default function Header() {
             [classes.border]: !!value,
           })}
           icon={
-            <Link href="/tags">
-              <Icon />
-            </Link>
+            <MuiSearch
+              size={30}
+              className={classes.header__icon}
+              onClick={searcHandler}
+            />
+            // <Link href="/tags">
+            //   <Icon onClick={searcHandler} />
+            // </Link>
           }
         />
         {/* <MuiButton label="Login" href="/login" /> */}

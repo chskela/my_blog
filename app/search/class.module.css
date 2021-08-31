@@ -1,0 +1,23 @@
+.content {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 242px);
+}
+
+.articles {
+  margin: 0 var(--size-30);
+  flex: 81;
+}
+
+.small > div[data-role="image"] {
+  flex: 33;
+}
+
+.small > div[data-role="description"] {
+  flex: 67;
+  margin-left: var(--size-8);
+}
